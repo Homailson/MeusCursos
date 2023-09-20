@@ -9,14 +9,14 @@ def multiply(*args):
 # posicionais através da tupla de argumentos
 # e também temos um keyword argument, no caso,
 # operator, que é compulsório. 
-def apply(*args, operator):
+def apply(*args, operator):    
     if operator == "*":
-        return multiply(args)
+        return multiply(*args)
     elif operator == "+":
         return sum(args)
     else:
         return "O operador provido não é válido à função apply"
 
-nums = (1, 2, 3, 6, 7)
+nums = (1, 2, 3, 4, 5)
 
 print(apply(*nums, operator="*"))
