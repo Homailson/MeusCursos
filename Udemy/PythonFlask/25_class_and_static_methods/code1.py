@@ -1,9 +1,9 @@
-# Método, em python, é uma chamada de um método de uma instância(objeto) porque nós os chamamos por meio de uma instância(objeto) da classe
+# Método, em python, é uma chamada de um método de uma instância(objeto), porque os chamamos por meio de uma instância(objeto) da classe
 class ClassTest:
-    def instance_method(self): # Instance methods são todos os métodos da classe que têm como primeiro parâmetro self, ou seja, são relativos a um objeto
+    def instance_method(self): # Instance methods são todos os métodos da classe que têm como primeiro parâmetro self, ou seja, são relativos a um objeto da classe
         print(f"Called instance_method of {self}")
 
-    @classmethod
+    @classmethod # Métodos de classe são utilizados como uma fábrica de objetos específicos da classe
     def class_method(cls):
         print(f"Called class_method of {cls }")
 
