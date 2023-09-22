@@ -57,4 +57,6 @@ mage1.awakened = True
 mage1.wakeupSleep()
 
 mage1.fireball()
+
+print(mage1.remaing_mana)
         
