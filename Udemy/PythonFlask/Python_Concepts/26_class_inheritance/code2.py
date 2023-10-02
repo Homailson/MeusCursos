@@ -42,13 +42,14 @@ class Mage(Character):
     def fireball(self):
         if self.awakened:
             if self.remaing_mana < 100:
-                print("Not enough mana")            
-            self.remaing_mana -= 100
-            print(f"{self.name} casted Fireball.\nNow {self.name}'s mana is {self.remaing_mana}.")
+                print("Not enough mana")
+            else:            
+                self.remaing_mana -= 100
+                print(f"{self.name} casted Fireball.\nNow {self.name}'s mana is {self.remaing_mana}.")
         else:
             print(f"{self.name} can not cast spells when sleeping!")
 
-mage1 = Mage("Morgana", "female", 32, "firemage", 500)
+mage1 = Mage("Morgana", "female", 32, "firemage", 80)
 
 print(mage1)
 

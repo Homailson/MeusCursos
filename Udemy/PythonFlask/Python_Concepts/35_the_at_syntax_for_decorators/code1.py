@@ -1,8 +1,9 @@
-def get_admin_password():
-    return "1234"
+import functools
 
+user = {"username": "Jose", "acess_level": "admin"}
 
 def make_secure(func):
+    @functools.wraps(func)
     def secure_function():
         if user["acess_level"] == "admin":
             return func()
@@ -11,6 +12,10 @@ def make_secure(func):
     
     return secure_function
 
-get_admin_password = make_secure(get_admin_password)
-user = {"username": "Jose", "acess_level": "admin"}
+@make_secure
+def get_admin_password():
+    return "1234"
+
+
+print(get_admin_password.__name__)
 print(get_admin_password())
