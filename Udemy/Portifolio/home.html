@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav class="sidebar">
+        
+        <img class="sidebar_image" src="homailson_foto.png" alt="foto_homailson">
+        
+        <p class="nome">Homailson</p>
+        <p class="trabalho">Aberto a trabalho</p>
+
+        <button class="menu-toggle" onclick="toggleMenu()">☰ Menu</button>
+        <ul class="sidebar__list">
+            <li><a class="sidebar__item" href="#home-section" onclick="toggleMenu()">Home</a></li>
+            <li><a class="sidebar__item" href="#about-section" onclick="toggleMenu()">Sobre mim</a></li>
+            <li><a class="sidebar__item" href="#portfolio-section" onclick="toggleMenu()">Portifólio</a></li>
+            <li><a class="sidebar__item" href="#blog-section" onclick="toggleMenu()">Blog</a></li>
+            <li><a class="sidebar__item" href="#contact-section" onclick="toggleMenu()">Contato</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="home-section">
+            <p>Conteudo da secao 1</p>
+        </section>
+
+        <section id="about-section">
+            <p>Conteudo da secao 2</p>
+        </section>
+
+        <section id="portfolio-section">
+            <p>Conteudo da secao 3</p>
+        </section>
+
+        <section id="blog-section">
+            <p>Conteudo da secao 4</p>
+        </section>
+
+        <section id="contact-section">
+            <p>Conteudo da secao 5</p>
+        </section>
+    </main>
+
+    <script>
+        function toggleMenu() {
+            var sidebarList = document.querySelector('.sidebar__list');
+            sidebarList.classList.toggle('show-menu');
+        }
+    </script>
+
+</body>
+
+</html>

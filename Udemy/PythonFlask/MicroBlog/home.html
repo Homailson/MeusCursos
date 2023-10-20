@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MicroBlog</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="navbar__brand">
+            <img class="navbar__logo" src="logo.svg" alt="Logo do Microblog">MicroBlog
+        </div>
+        <ul class="navbar__navigation">
+            <li class="navbar__navigation-item"><a href="#" class="navbar__link">Recentes</a></li>
+            <li class="navbar__navigation-item"><a href="#" class="navbar__link">Calendário</a></li>            
+        </ul>
+    </header>
+    <main class="main">
+        <section>
+            <h1>Adicionar novo post</h1>
+            <form class="form" action="/entry" method="POST">
+                <p class="form__input">
+                    <label class="form__label" for="entry">Conteúdo</label>
+                    <textarea class="form__textarea" name="content" id="entry"></textarea>
+                </p>                
+                <!-- <label for="sample-field">Sample:</label> -->
+                <!-- <input type="text" name="sample" id="sample-field"> -->
+                <button class="form__submit" type="submit">Adicionar conteúdo</button>
+            </form>
+        </section>
+        <section>
+            <h1>Posts recentes</h1>
+            <article class="entry">
+                <div>
+                    <h2 class="entry__title">Um pouco do dia a dia</h2>
+                    <time class="entry__date" datetime="17-10-2023">• Oct 17</time>
+                </div>
+                <p class="entry__content">
+                    Hoje eu não programei muito, mas tudo bem! Pode ser um dia fantástico mesmo assim!
+                </p>
+            </article>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__content">
+            <section class="left">
+                <a class="footer__item">Feito por mim</a>
+                <a class="footer__item">Veja meus outros projetos</a>
+            </section>
+            <section class="right">
+                <div class="footer__column">
+                    <a class="footer__item">Recente</a>
+                    <a class="footer__item">Calendario</a>
+                </div>
+                <div class="footer__column">
+                    <a class="footer__item" href="#">Sobre</a>
+                    <a class="footer__item">Como foi feito</a>
+                </div>
+            </section>
+        </div>
+    </footer>
+</body>
+</html>
