@@ -18,7 +18,7 @@ body {
 }
 
 .sidebar {
-    padding-top: 15rem;
+    padding: .5rem;
     width: 15%;
     height: 100vh;
     position: fixed;
@@ -28,9 +28,10 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
-.sidebar_image {      
+.sidebar_image {
     width: 100%;
     max-width: 10rem;
     height: auto;
@@ -47,7 +48,7 @@ body {
 
 .trabalho {
     font-size: 0.80rem;
-    color: #807e7e;   
+    color: #807e7e;
 }
 
 .sidebar__list {
@@ -71,7 +72,7 @@ body {
 
 main {
     margin-left: 15%;
-    width: 85%;    
+    width: 85%;
     padding: 0;
 }
 
@@ -86,7 +87,6 @@ section {
 
 @media screen and (max-width: 768px) {
     .sidebar {
-        padding-top: 0;
         width: 100%;
         height: auto;
         flex-direction: column;
@@ -103,13 +103,9 @@ section {
     .nome {
         display: none;
     }
-    
+
     .trabalho {
         display: none;
-    }
-
-    body {
-        margin-top: 35px;
     }
 
     main {
@@ -123,14 +119,13 @@ section {
         color: white;
         font-size: 1rem;
         border: none;
-        padding: 10px;
+        /* padding: 10px; */
         cursor: pointer;
     }
 
-    .show-menu {        
-        margin-top: 20px;
+    .show-menu {
+        margin-top: 1rem;
         display: flex;
         flex-direction: column;
     }
-
 }

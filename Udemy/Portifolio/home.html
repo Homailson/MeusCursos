@@ -11,19 +11,19 @@
 <body>
 
     <nav class="sidebar">
-        
+
         <img class="sidebar_image" src="homailson_foto.png" alt="foto_homailson">
-        
+
         <p class="nome">Homailson</p>
         <p class="trabalho">Aberto a trabalho</p>
 
         <button class="menu-toggle" onclick="toggleMenu()">☰ Menu</button>
         <ul class="sidebar__list">
-            <li><a class="sidebar__item" href="#home-section" onclick="toggleMenu()">Home</a></li>
-            <li><a class="sidebar__item" href="#about-section" onclick="toggleMenu()">Sobre mim</a></li>
-            <li><a class="sidebar__item" href="#portfolio-section" onclick="toggleMenu()">Portifólio</a></li>
-            <li><a class="sidebar__item" href="#blog-section" onclick="toggleMenu()">Blog</a></li>
-            <li><a class="sidebar__item" href="#contact-section" onclick="toggleMenu()">Contato</a></li>
+            <li><a class="sidebar__item" href="#home-section" onclick="closeMenu()">Home</a></li>
+            <li><a class="sidebar__item" href="#about-section" onclick="closeMenu()">Sobre mim</a></li>
+            <li><a class="sidebar__item" href="#portfolio-section" onclick="closeMenu()">Portifólio</a></li>
+            <li><a class="sidebar__item" href="#blog-section" onclick="closeMenu()">Blog</a></li>
+            <li><a class="sidebar__item" href="#contact-section" onclick="closeMenu()">Contato</a></li>
         </ul>
     </nav>
 
@@ -54,6 +54,43 @@
             var sidebarList = document.querySelector('.sidebar__list');
             sidebarList.classList.toggle('show-menu');
         }
+
+        function closeMenu() {
+            var sidebarList = document.querySelector('.sidebar__list');
+            sidebarList.classList.remove('show-menu');
+        }
+
+        window.addEventListener('resize', function () {
+            var sidebarList = document.querySelector('.sidebar__list');
+            if (window.innerWidth > 768) {
+                sidebarList.classList.remove('show-menu');
+            }
+
+
+            var currentSection = getCurrentSection();
+            if (currentSection) {
+                currentSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        });
+
+        function getCurrentSection() {
+            var sections = document.querySelectorAll('section');
+            var closestSection = null;
+            var closestDistance = Infinity;
+
+            sections.forEach(function (section) {
+                var rect = section.getBoundingClientRect();
+                var distance = Math.abs(rect.top);
+
+                if (distance < closestDistance) {
+                    closestDistance = distance;
+                    closestSection = section;
+                }
+            });
+
+            return closestSection;
+        }
+
     </script>
 
 </body>
