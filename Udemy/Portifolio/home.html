@@ -28,12 +28,17 @@
     </nav>
 
     <main>
-        <section id="home-section">
-            <p>Conteudo da secao 1</p>
-        </section>
+        <section class="secao1" id="home-section">
+            <img class="secao1__image" src="fotoHomailsonsecao1.png" alt="HomailsonFoto">
+            <img class="secao1__backgroung" src="bg.jpg" alt="backgroung">
+            <div class="secao1__texto">
+                <p class="secao1__nome">Homailson Lopes</p>
+                <p id="linha-efeito"><span id="word"></span></p>
+            </div>
+        </section>       
 
-        <section id="about-section">
-            <p>Conteudo da secao 2</p>
+        <section class="secao2" id="about-section">
+            <!-- <p>Conteudo da secao 2</p> -->
         </section>
 
         <section id="portfolio-section">
@@ -49,7 +54,7 @@
         </section>
     </main>
 
-    <script>
+    <script type="text/javascript">
         function toggleMenu() {
             var sidebarList = document.querySelector('.sidebar__list');
             sidebarList.classList.toggle('show-menu');
@@ -62,7 +67,7 @@
 
         window.addEventListener('resize', function () {
             var sidebarList = document.querySelector('.sidebar__list');
-            if (window.innerWidth > 768) {
+            if (window.innerWidth > 992) {
                 sidebarList.classList.remove('show-menu');
             }
 
@@ -90,6 +95,48 @@
 
             return closestSection;
         }
+
+        const words = ["Estudante de Ciências de Dados", "Professor de Matemática"];
+        let i = 0;
+        let timer;
+
+        function typingEffect() {
+            let word = words[i].split("");
+            var loopTyping = function () {
+                if (word.length > 0) {
+                    document.getElementById('word').innerHTML += word.shift();
+                } else {
+                    deletingEffect();
+                    return false;
+                }
+                timer = setTimeout(loopTyping, 150);
+            };
+            loopTyping();
+        }
+
+        function deletingEffect() {
+            let word = words[i].split("");
+            var loopDeleting = function () {
+                if (word.length > 0) {
+                    word.pop();
+                    document.getElementById('word').innerHTML = word.join("");
+                } else {
+                    if (words.length > (i + 1)) {
+                        i++;
+                    } else {
+                        i = 0;
+                    }
+                    typingEffect();
+                    return false;
+                }
+                timer = setTimeout(loopDeleting, 50);
+            };
+            loopDeleting();
+        }
+
+        typingEffect();
+
+
 
     </script>
 
