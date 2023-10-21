@@ -5,14 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./static/css/style.css">
 </head>
 
-<body>
+<body onscroll="highlightCurrentSection()">
 
     <nav class="sidebar">
 
-        <img class="sidebar__image" src="homailson_foto.png" alt="foto_homailson">
+        <img class="sidebar__image" src="./static/imgs/homailson_foto.png" alt="foto_homailson">
 
         <p class="sidebar__nome">Homailson</p>
         <p class="sidebar__trabalho">Aberto a trabalho</p>
@@ -29,9 +29,9 @@
 
     <main>
         <section class="secao1" id="home-section">
-            <img class="secao1__image" src="fotoHomailsonsecao1.png" alt="HomailsonFoto">
-            <img class="secao1__backgroung" src="bg.jpg" alt="backgroung">
-            <a href="#about-section"><img class="secao1_scroll_down_image" src="scroldown.gif" alt="indicador_de_rolagem"></a>            
+            <img class="secao1__image" src="./static/imgs/fotoHomailsonsecao1.png" alt="HomailsonFoto">
+            <img class="secao1__backgroung" src="./static/imgs/bg.jpg" alt="backgroung">
+            <a href="#about-section"><img class="secao1_scroll_down_image" src="./static/imgs/scroldown.gif" alt="indicador_de_rolagem"></a>            
             <div class="secao1__texto">
                 <p class="secao1__nome">Homailson Lopes</p>
                 <p id="linha-efeito"><span id="word"></span></p>
@@ -39,7 +39,7 @@
         </section>       
 
         <section class="secao2" id="about-section">
-            <!-- <p>Conteudo da secao 2</p> -->
+            <p>Conteudo da secao 2</p>
         </section>
 
         <section id="portfolio-section">
@@ -56,91 +56,15 @@
     </main>
 
     <script type="text/javascript">
-        function toggleMenu() {
-            var sidebarList = document.querySelector('.sidebar__list');
-            sidebarList.classList.toggle('show-menu');
-        }
 
-        function closeMenu() {
-            var sidebarList = document.querySelector('.sidebar__list');
-            sidebarList.classList.remove('show-menu');
-        }
-
-        window.addEventListener('resize', function () {
-            var sidebarList = document.querySelector('.sidebar__list');
-            if (window.innerWidth > 992) {
-                sidebarList.classList.remove('show-menu');
-            }
-
-
-            var currentSection = getCurrentSection();
-            if (currentSection) {
-                currentSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
-            }
-        });
-
-        function getCurrentSection() {
-            var sections = document.querySelectorAll('section');
-            var closestSection = null;
-            var closestDistance = Infinity;
-
-            sections.forEach(function (section) {
-                var rect = section.getBoundingClientRect();
-                var distance = Math.abs(rect.top);
-
-                if (distance < closestDistance) {
-                    closestDistance = distance;
-                    closestSection = section;
-                }
-            });
-
-            return closestSection;
-        }
-
-        const words = ["Estudante de Ciências de Dados", "Professor de Matemática"];
-        let i = 0;
-        let timer;
-
-        function typingEffect() {
-            let word = words[i].split("");
-            var loopTyping = function () {
-                if (word.length > 0) {
-                    document.getElementById('word').innerHTML += word.shift();
-                } else {
-                    deletingEffect();
-                    return false;
-                }
-                timer = setTimeout(loopTyping, 150);
-            };
-            loopTyping();
-        }
-
-        function deletingEffect() {
-            let word = words[i].split("");
-            var loopDeleting = function () {
-                if (word.length > 0) {
-                    word.pop();
-                    document.getElementById('word').innerHTML = word.join("");
-                } else {
-                    if (words.length > (i + 1)) {
-                        i++;
-                    } else {
-                        i = 0;
-                    }
-                    typingEffect();
-                    return false;
-                }
-                timer = setTimeout(loopDeleting, 50);
-            };
-            loopDeleting();
-        }
-
-        typingEffect();
+        
 
 
 
     </script>
-
+        <script type="text/javascript" src="./static/js/menu.js"></script>
+        <script type="text/javascript" src="./static/js/home_text.js"></script>
+        <script type="text/javascript" src="./static/js/highlight.js"></script>
 </body>
 
 </html>

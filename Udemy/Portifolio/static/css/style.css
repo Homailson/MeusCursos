@@ -65,8 +65,6 @@ body {
     z-index: 0;
 }
 
-
-
 .secao1__texto {
     position: absolute;
     top: 30%;
@@ -118,6 +116,10 @@ body {
     font-size: 1.5rem;
     color: white;
     margin-bottom: 1.2rem;
+}
+
+.active-link {
+    color: #D9665B;
 }
 
 .sidebar__item:hover {
