@@ -1,4 +1,4 @@
-const words = ["Cientista de Dados", "Professor", "Pai de Helena"];
+const words = ["Cientista de Dados", "Professor", "pai de Helena"];
 let i = 0;
 let timer;
 
