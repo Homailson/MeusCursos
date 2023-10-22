@@ -1,3 +1,7 @@
+document.addEventListener("DOMContentLoaded", function() {   
+    highlightCurrentSection();
+});
+
 function highlightCurrentSection() {
     var currentSection = getCurrentSection();
 
