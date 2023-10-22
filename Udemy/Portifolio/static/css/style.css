@@ -6,7 +6,7 @@
 
 
 html {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'Open Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
     scroll-behavior: smooth;
 }
 
@@ -24,7 +24,7 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    background-color: #242323;
+    background-color: #292929;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -38,18 +38,17 @@ body {
     max-width: 10rem;
     height: auto;
     border-radius: 50%;
-    border: 0.3rem solid #807e7e;
+    border: 0.3rem solid #D9D9D9;
 
 }
 
 
-.secao1__backgroung {
-    width: 100%;
-    height: 100vh;
-    z-index: -1;
+.secao1 {
+    background-color: #EAEAEA;
 }
 
 .secao1__image {
+    width: 20%;
     position: absolute;
     right: 0;
     bottom: 0;
@@ -66,6 +65,8 @@ body {
 }
 
 .secao1__texto {
+    font-weight: 700;
+    letter-spacing: 0.3px;
     position: absolute;
     top: 30%;
     left: 50%;
@@ -74,19 +75,37 @@ body {
 }
 
 .secao1__nome {
-    color: white;
+    color: black;
     font-size: 5rem;
     margin: 0;
 }
 
 #linha-efeito {
-    color: #FF665B;
+    color: #D93654;
     font-size: 2.5rem;
     margin: 0;
 }
 
 #word {
     display: inline-block;
+}
+
+#cursor {
+    display: inline-block;
+    width: 2px; 
+    height: 35px;
+    background-color: black;
+    margin-left: 10px; 
+    animation: blink 0.8s infinite;
+}
+
+@keyframes blink {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
 }
 
 
@@ -100,10 +119,10 @@ body {
 .sidebar__trabalho {
     white-space: nowrap;
     font-size: 1rem;
-    color: #D9665B;
+    color: #D93654;
 }
 
-.sidebar__list {
+.sidebar__list {    
     list-style: none;
     padding: 0;
     margin-top: 3rem;
@@ -113,13 +132,13 @@ body {
 .sidebar__item {
     display: block;
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: white;
-    margin-bottom: 1.2rem;
+    margin-bottom: 1.5rem;
 }
 
 .active-link {
-    color: #D9665B;
+    color: #D93654;
 }
 
 .sidebar__item:hover {
@@ -143,10 +162,14 @@ section {
 }
 
 @media screen and (max-width: 992px) {
-    .sidebar {
+    .sidebar {        
         width: 100%;
         height: auto;
         flex-direction: column;
+    }
+
+    .sidebar__item {
+        font-size: 1rem;
     }
 
     .sidebar__image {
@@ -160,7 +183,7 @@ section {
 
 
     .secao1__image {
-        width: 50%;
+        width: 45%;
         z-index: 0;
     }
 
@@ -186,15 +209,23 @@ section {
     }
 
     .secao1__nome {
-        color: white;
-        font-size: 2.5rem;
+        color: black;
+        font-size: 2rem;
         margin: 0;
+        white-space: nowrap;
     }
 
     #linha-efeito {
-        color: #FF665B;
+        color: #D93654;
         font-size: 1.5rem;
         margin: 0;
+        white-space: nowrap;
+    }
+
+    #cursor {
+        display: inline-block;
+        width: 2px; 
+        height: 20px;
     }
 
     main {
