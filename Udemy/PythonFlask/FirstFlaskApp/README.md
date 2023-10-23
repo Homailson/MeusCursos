@@ -70,6 +70,8 @@
 
 
     **Depois assim:**
+ 
+ 
     ```
     $env:FLASK_DEBUG=1
     ```
