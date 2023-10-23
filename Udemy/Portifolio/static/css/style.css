@@ -75,21 +75,21 @@ body {
     border-bottom: 2px solid #D93654;    
 }
 
-#linha-efeito {
+.secao1__texto__frase__efeito {
     color: #2596be;
     font-size: 2.5rem;
     margin: 0;
 }
 
-#word {
+.secao1__texto__frase__efeito__palavras {
     display: inline-block;
 }
 
-#fixo {
+.secao1__texto__frase__efeito__fixo {
     color:#D93654;
 }
 
-#cursor {
+.secao1__texto__frase__efeito__cursor {
     display: inline-block;
     width: 2px; 
     height: 35px;
@@ -144,7 +144,7 @@ body {
     text-align: center;
 }
 
-.secao1__nome {
+.secao1__texto__nome {
     color: #292929;
     font-size: 5rem;
     margin: 0;
@@ -219,13 +219,13 @@ section {
         white-space: nowrap;
     }
 
-    #linha-efeito {        
+    .secao1__texto__frase__efeito {        
         font-size: 1.5rem;
         margin: 0;
         white-space: nowrap;
     }
 
-    #cursor {
+    .secao1__texto__frase__efeito__cursor{
         display: inline-block;
         width: 2px; 
         height: 20px;
