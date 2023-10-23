@@ -10,7 +10,7 @@ function closeMenu() {
 
 window.addEventListener('resize', function () {
     var sidebarList = document.querySelector('.sidebar__list');
-    if (window.innerWidth > 992) {
+    if (window.innerWidth > 1020) {
         sidebarList.classList.remove('show-menu');
     }
 
