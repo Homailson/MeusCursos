@@ -54,26 +54,32 @@ body {
     color: #2596be;
 }
 
-.sidebar__list {    
+.sidebar__list {
     list-style: none;
     padding: 0;
     margin-top: 3rem;
     text-align: center;
 }
 
-.sidebar__item {
+.sidebar__list__item {
     border-bottom: 2px solid transparent;
     display: block;
     text-decoration: none;
     font-size: 1.2rem;
-    color:black;
+    color: black;
     margin-bottom: 1.5rem;
 }
 
-.sidebar__item:hover {  
-    display: inline-block;  
-    border-bottom: 2px solid #D93654;    
+.sidebar__list__item:hover {
+    display: inline-block;
+    border-bottom: 2px solid #D93654;
 }
+
+
+.sidebar__active__link {
+    color: #2596be;
+}
+
 
 .secao1__texto__frase__efeito {
     color: #2596be;
@@ -86,32 +92,29 @@ body {
 }
 
 .secao1__texto__frase__efeito__fixo {
-    color:#D93654;
+    color: #D93654;
 }
 
 .secao1__texto__frase__efeito__cursor {
     display: inline-block;
-    width: 2px; 
+    width: 2px;
     height: 35px;
     background-color: black;
-    margin-left: 10px; 
+    margin-left: 10px;
     animation: blink 0.8s infinite;
 }
 
 @keyframes blink {
-    0%, 100% {
+
+    0%,
+    100% {
         opacity: 1;
     }
+
     50% {
         opacity: 0;
     }
 }
-
-
-.active-link {
-    color: #2596be;
-}
-
 
 .secao1 {
     background-color: #EAEAEA;
@@ -167,13 +170,13 @@ section {
 }
 
 @media screen and (max-width: 992px) {
-    .sidebar {        
+    .sidebar {
         width: 100%;
         height: auto;
         flex-direction: column;
     }
 
-    .sidebar__item {
+    .sidebar__list__item {
         font-size: 1rem;
     }
 
@@ -219,15 +222,15 @@ section {
         white-space: nowrap;
     }
 
-    .secao1__texto__frase__efeito {        
+    .secao1__texto__frase__efeito {
         font-size: 1.5rem;
         margin: 0;
         white-space: nowrap;
     }
 
-    .secao1__texto__frase__efeito__cursor{
+    .secao1__texto__frase__efeito__cursor {
         display: inline-block;
-        width: 2px; 
+        width: 2px;
         height: 20px;
     }
 
@@ -241,7 +244,7 @@ section {
         background-color: #cecece;
         color: black;
         font-size: 1rem;
-        border: none;        
+        border: none;
         cursor: pointer;
     }
 

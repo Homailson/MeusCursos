@@ -12,41 +12,42 @@
 
     <nav class="sidebar">
 
-        <img class="sidebar__image" src="./static/imgs/homailson_foto_2.png" alt="foto_homailson">
+        <img class="sidebar__image" src="./static/imgs/sidebar__foto__homailson.png" alt="foto_homailson">
 
         <p class="sidebar__nome">Homailson</p>
         <p class="sidebar__trabalho">Aberto a trabalho</p>
 
         <button class="menu-toggle" onclick="toggleMenu()">☰ Menu</button>
         <ul class="sidebar__list">
-            <li><a class="sidebar__item" href="#home-section" onclick="closeMenu()">Home</a></li>
-            <li><a class="sidebar__item" href="#about-section" onclick="closeMenu()">Sobre mim</a></li>
-            <li><a class="sidebar__item" href="#portfolio-section" onclick="closeMenu()">Portifólio</a></li>
-            <li><a class="sidebar__item" href="#blog-section" onclick="closeMenu()">Blog</a></li>
-            <li><a class="sidebar__item" href="#contact-section" onclick="closeMenu()">Contato</a></li>
+            <li><a class="sidebar__list__item" href="#home-section" onclick="closeMenu()">Home</a></li>
+            <li><a class="sidebar__list__item" href="#about-section" onclick="closeMenu()">Sobre mim</a></li>
+            <li><a class="sidebar__list__item" href="#portfolio-section" onclick="closeMenu()">Portifólio</a></li>
+            <li><a class="sidebar__list__item" href="#blog-section" onclick="closeMenu()">Blog</a></li>
+            <li><a class="sidebar__list__item" href="#contact-section" onclick="closeMenu()">Contato</a></li>
         </ul>
     </nav>
 
     <main>
         <section class="secao1" id="home-section">
-            
-            <img class="secao1__image" src="./static/imgs/fotoHomailsonsecao1_3.png" alt="HomailsonFoto">            
-            
-            <a href="#about-section"><img class="secao1_scroll_down_image" src="./static/imgs/scroldown.gif" alt="indicador_de_rolagem"></a>            
-            
+
+            <img class="secao1__image" src="./static/imgs/secao1__foto__homailson.png" alt="HomailsonFoto">
+
+            <a href="#about-section"><img class="secao1_scroll_down_image" src="./static/imgs/secao1__scrolldown.gif"
+                    alt="indicador_de_rolagem"></a>
+
             <div class="secao1__texto">
-                
+
                 <p class="secao1__texto__nome">Homailson Lopes</p>
-                
+
                 <p class="secao1__texto__frase__efeito">
                     <span class="secao1__texto__frase__efeito__fixo">Sou </span>
                     <span class="secao1__texto__frase__efeito__palavras" id="word"></span>
                     <span class="secao1__texto__frase__efeito__cursor" id="cursor"></span>
                 </p>
-            
+
             </div>
-        
-        </section>       
+
+        </section>
 
         <section class="secao2" id="about-section">
             <p>Conteudo da secao 2</p>
@@ -64,7 +65,7 @@
             <p>Conteudo da secao 5</p>
         </section>
     </main>
-    
+
     <script type="text/javascript" src="./static/js/menu.js"></script>
     <script type="text/javascript" src="./static/js/home_text.js"></script>
     <script type="text/javascript" src="./static/js/highlight.js"></script>
