@@ -8,10 +8,10 @@ function typingEffect() {
         if (word.length > 0) {
             document.getElementById('word').innerHTML += word.shift();
         } else {
-            deletingEffect();
+            setTimeout(deletingEffect, 1500); // Agora espera um segundo antes de começar a apagar
             return false;
         }
-        timer = setTimeout(loopTyping, 180);
+        timer = setTimeout(loopTyping, 40);
     };
     loopTyping();
 }
@@ -23,15 +23,15 @@ function deletingEffect() {
             word.pop();
             document.getElementById('word').innerHTML = word.join("");
         } else {
+            setTimeout(typingEffect, 100); // Agora espera meio segundo antes de começar a escrever a próxima palavra
             if (words.length > (i + 1)) {
                 i++;
             } else {
                 i = 0;
             }
-            typingEffect();
             return false;
         }
-        timer = setTimeout(loopDeleting, 100);
+        timer = setTimeout(loopDeleting, 40);
     };
     loopDeleting();
 }
