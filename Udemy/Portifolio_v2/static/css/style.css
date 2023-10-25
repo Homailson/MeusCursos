@@ -111,19 +111,20 @@ article {
     color: #2596be;
 }
 
+/* Classe adicionada pelo JS menu.js*/
 .menu-toggle {
     display: none;
 }
 
 
+/* Home Section */
 .home__section__texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;   
     font-weight: 700;
     letter-spacing: 0.3px;
-    /* position: absolute;
-    top: 30%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center; */
 }
 
 .home__section__texto__nome {
@@ -157,6 +158,12 @@ article {
     animation: blink 0.8s infinite;
 }
 
+.home__section__image {
+    position:absolute;
+    width: 20%;
+    right: 0;
+    bottom: 0;
+}
 
 /* Efeito de "brilho" do cursor no texto*/
 @keyframes blink {
@@ -173,8 +180,12 @@ article {
 
 /* Fim do efeito de "brilho" do cursor no texto*/
 
-
 @media screen and (max-width: 1020px) {
+
+    main {        
+        margin-left: 0;
+        width: 100hv;        
+    }
 
     .navbar {
         width: 100%;
@@ -214,12 +225,31 @@ article {
     .show-menu {
         margin-top: 1rem;
         display: flex;
-        flex-direction: column;
+        flex-direction: column;        
     }
 
-    main {
-        margin-left: 0;
-        width: 100%;
+
+    .home__section__texto__nome {
+        color: black;
+        font-size: 2.2rem;
+        margin: 0;
+        white-space: nowrap;
+    }
+
+    .home__section__texto__frase__efeito {
+        font-size: 1.4rem;
+        margin: 0;
+        white-space: nowrap;
+    }
+
+    .home__section__texto__frase__efeito__cursor {
+        display: inline-block;
+        width: 2px;
+        height: 20px;
+    }
+
+    .home__section__image{
+        width: 35%;
     }
 }
 
