@@ -47,13 +47,11 @@ section {
 }
 
 .rodape {
-    display: flex;
-    flex-direction: column;
-    padding: 0.2rem;
-    margin: .5rem;
-    height: 5%;
-    align-items: center;
-    justify-content: center;
+    text-align: center;
+}
+
+.rodape__image {
+    width: 3%;
 }
 
 article {
@@ -122,7 +120,7 @@ article {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    text-align: center;   
+    text-align: center;
     font-weight: 700;
     letter-spacing: 0.3px;
 }
@@ -159,11 +157,14 @@ article {
 }
 
 .home__section__image {
-    position:absolute;
+    position: absolute;
     width: 20%;
     right: 0;
     bottom: 0;
 }
+
+
+
 
 /* Efeito de "brilho" do cursor no texto*/
 @keyframes blink {
@@ -182,9 +183,9 @@ article {
 
 @media screen and (max-width: 1020px) {
 
-    main {        
+    main {
         margin-left: 0;
-        width: 100hv;        
+        width: 100hv;
     }
 
     .navbar {
@@ -225,7 +226,7 @@ article {
     .show-menu {
         margin-top: 1rem;
         display: flex;
-        flex-direction: column;        
+        flex-direction: column;
     }
 
 
@@ -248,8 +249,18 @@ article {
         height: 20px;
     }
 
-    .home__section__image{
+    .home__section__image {
         width: 35%;
+    }
+
+    .articles {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about__section__visual__image {
+        width: 60%;
     }
 }
 
