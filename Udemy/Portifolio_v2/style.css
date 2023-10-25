@@ -3,19 +3,28 @@ body {
     margin: 0;
 }
 
-
 nav {
+    width: 15%;
     flex: 0 0 15%;
-    background-color: #f0f0f0;
+    height: 100vh; 
+    position: fixed;
+    background-color: #f0f0f0;    
 }
 
-main{
+main {
     flex: 1;
+    margin-left: 15%; /* Ajusta a margem para acomodar a barra lateral fixa */
     background-color: #e0e0e0;
+    padding: 20px; /* Adiciona algum espaço para evitar que o conteúdo seja obscurecido pela barra lateral */
+}
+
+
+section{
+    height: 100vh;
 }
 
 .articles {
-    display: flex;
+    display: flex;    
 }
 
 article {
