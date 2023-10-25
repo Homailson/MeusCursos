@@ -89,7 +89,7 @@ main {
 
 
 section {
-    height: 100vh;
+    height: 100vh;    
     text-align: center;
 }
 
@@ -106,7 +106,7 @@ section {
     z-index: 0;
 }
 
-.home__section_scroll_down_image {
+.scroll_down_image {
     width: 10%;
     position: absolute;
     bottom: 0;
@@ -177,6 +177,7 @@ section {
     display: none;
 }
 
+
 @media screen and (max-width: 1020px) {
 
     .sidebar {
@@ -205,7 +206,7 @@ section {
         display: none;
     }
 
-    main {
+    main {        
         margin-left: 0;
         width: 100%;
     }
@@ -215,7 +216,7 @@ section {
         z-index: 0;
     }
 
-    .home__section_scroll_down_image {
+    .scroll_down_image {
         width: 30%;
     }
 
@@ -270,4 +271,82 @@ section {
         scrollbar-width: thin;
         -webkit-scrollbar-width: thin;
     }
+
+    section {
+        height: 100%;
+    }
+}
+
+
+/* Seção about__section */
+.about__section {
+    display: flex;    
+    margin: 0 10rem 0 10rem;
+    align-items: center;
+}
+
+.about__section__visual {
+    flex: 0 0 40%; /* Flex-grow: 0, Flex-shrink: 0, Largura: 40% */    
+    /* padding: 1.5rem; */
+    display: flex;
+    flex-direction: column;
+}
+
+.about__section__title {    
+    font-size: 3rem;
+    white-space: nowrap;   
+    text-align: left;
+}
+
+.about__section__foto_Homailson {
+    margin-top: 1rem;
+    max-width: 100%;
+    height: auto;        
+}
+
+.about__section__textual {
+    flex: 0 0 60%; /* Flex-grow: 0, Flex-shrink: 0, Largura: 60% */
+    padding: 1.5rem;
+    text-align: left;
+}
+
+.about__section__subtitle__whoami {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #2596be;
+}
+
+.about__section__subtitle__iam {
+    line-height: 2.5rem;
+    font-weight: 380;    
+    font-size: 2rem;    
+}
+
+.about__section__subtitle__my_description {
+    line-height: 2.0rem;     
+    font-size: 1rem; 
+}
+
+
+@media (max-width: 1020px) {
+    .about__section {
+        margin: 0;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about__section__visual {
+        align-items: center;
+    }
+
+    
+    .about__section__foto_Homailson {
+        width: 60%;
+    }
+
+    .about__section__subtitle__whoami {
+        color: #2596be;
+    }
+
 }
