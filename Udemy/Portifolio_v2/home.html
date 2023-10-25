@@ -1,51 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portifólio2</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./static/css/style.css">
 </head>
+
 <body>
-    <nav>
-        NAV
+    <nav class="navbar">
+        <img class="navbar__image" src="./static/imgs/navbar__foto_Homailson.png" alt="Foto de Homailson Lopes">
+        <p class="navbar__nome">Homailson</p>
+        <p class="navbar__trabalho">Aberto a trabalho</p>
+        <button class="menu-toggle" onclick="toggleMenu()">☰ Menu</button>
+        <ul class="navbar__list">
+            <li><a class="navbar__list__item" href="#home__section" onclick="closeMenu()">Home</a></li>
+            <li><a class="navbar__list__item" href="#about__section" onclick="closeMenu()">Sobre mim</a></li>
+            <li><a class="navbar__list__item" href="#portfolio__section" onclick="closeMenu()">Portifólio</a></li>
+            <li><a class="navbar__list__item" href="#blog__section" onclick="closeMenu()">Blog</a></li>
+            <li><a class="navbar__list__item" href="#contact__section" onclick="closeMenu()">Contato</a></li>
+        </ul>
+
     </nav>
 
     <main>
-        <section class="home__section">
-            
-            <article>
-                <h1>HOME SECTION</h1>
-            </article>
-            
+        <section class="home__section" id="home__section">
+            <div class="articles">
+                <article class="home__section__texto">
+                    <h1 class="home__section__texto__nome">Homailson Lopes</h1>
+                    <p class="home__section__texto__frase__efeito">
+                        <span class="home__section__texto__frase__efeito__fixo">Sou </span>
+                        <span class="home__section__texto__frase__efeito__palavras" id="word"></span>
+                        <span class="home__section__texto__frase__efeito__cursor" id="cursor"></span>
+                    </p>
+                </article>
+            </div>
+
             <div class="rodape">
                 <p>RODAPE</p>
             </div>
-        
+
         </section>
 
-        <section class="about__section">
-            
+        <section class="about__section" id="about__section">
+
             <div class="articles">
-                
+
                 <article>
                     <h1>ABOUT SECTION PART ONE</h1>
                 </article>
-    
+
                 <article>
                     <h1>ABOUT SECTION PART TWO</h1>
                 </article>
 
             </div>
-            
+
             <div class="rodape">
                 <p>RODAPE</p>
             </div>
-        
+
         </section>
 
 
 
     </main>
+
+    <script type="text/javascript" src="./static/js/menu.js"></script>
+    <script type="text/javascript" src="./static/js/home_text.js"></script>
+    <script type="text/javascript" src="./static/js/highlight.js"></script>
+
 </body>
+
+</html>
+</body>
+
 </html>
