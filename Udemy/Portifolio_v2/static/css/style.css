@@ -30,8 +30,6 @@ nav {
 main {
     flex: 1;
     margin-left: 15%;
-    background-color: #e0e0e0;
-
 }
 
 
@@ -52,7 +50,7 @@ section {
 }
 
 .rodape__image {
-    width: 3%;
+    width: 2rem;
 }
 
 article {
@@ -105,7 +103,7 @@ article {
     border-bottom: 2px solid #D93654;
 }
 
-
+/* Classe adicionada pelo JS highlight.js*/
 .navbar__active__link {
     color: #2596be;
 }
@@ -117,6 +115,11 @@ article {
 
 
 /* Home Section */
+
+.home__section {
+    background-color: #e0e0e0;
+}
+
 .home__section__texto {
     display: flex;
     flex-direction: column;
@@ -167,7 +170,18 @@ article {
 /* About Section */
 .about__section {
     margin: 0 5rem;
-    background-color: white;
+    background-color: white;    
+}
+
+.about__section__visual{    
+    text-align: center;
+    margin-right: 0;
+    padding-right: 0;
+}
+
+.about__section__textual{
+    margin-left: 0;
+    padding-left: 0;
 }
 
 .about__section__subtitle__whoami {
@@ -200,8 +214,7 @@ article {
 @media screen and (max-width: 1020px) {
 
     main {
-        margin-left: 0;
-        width: 100hv;
+        margin-left: 0;        
     }
 
     .navbar {
@@ -264,47 +277,60 @@ article {
         width: 2px;
         height: 20px;
     }
-
+    
     .home__section__image {
-        /* width: 35%; */
-        display: none;
+        width: 35%;         
+    }
+
+    /* About Section */
+
+    .about__section {
+        align-items: center;
+        margin: 1rem;        
     }
 
     .articles {
-        display: flex;
-        align-items: center;
         flex-direction: column;
     }
 
-
-    .about__section {
-        padding: 3rem 0 0 0;
-        margin: auto;
-    }
-
+    /* Nesta parte, eu ganho o maximo possivel de área
+    da área do aparelho móvel */
     .about__section__visual {
-        text-align: center;
-        padding: 0;
+        display: flex;
+        flex-direction: column;       
+        justify-content: space-around;
+        align-items: center;      
+        padding-bottom: 0;
+        margin-bottom: 0;        
+        margin-top: auto;
     }
 
     .about__section__visual__image {
-        width: 70%;
+        padding-top: 1.4rem;
+        width: 60%;
     }
 
     .about__section__textual {
-        padding: 0.2;
-        text-align: justify;
+        font-size: 0.85rem;
+        padding: 0;
+        
     }
 
     .about__section__subtitle__whoami {
         margin: 0;
     }
 
-    .about__section__subtitle__my_description {
+    .about__section__subtitle__my_description {        
         text-align: justify;
         line-height: 1.5;
-        margin-bottom: 1.5rem;
+        margin-bottom: 0;
         /* Adicione esta linha para criar espaço inferior */
+    }
+
+    /* Rodape Imagem */
+
+    .rodape__image {
+        width: 1rem;
     }
 }
 
