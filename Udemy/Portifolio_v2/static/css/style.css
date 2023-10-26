@@ -167,6 +167,7 @@ article {
 /* About Section */
 .about__section {
     margin: 0 5rem;
+    background-color: white;
 }
 
 .about__section__subtitle__whoami {
@@ -177,6 +178,9 @@ article {
     text-align: justify;
     line-height: 1.5;
 }
+
+/* Portifolio Section */
+
 
 /* Efeito de "brilho" do cursor no texto*/
 @keyframes blink {
@@ -267,10 +271,11 @@ article {
     }
 
     .articles {
-        text-align: center;
         display: flex;
+        align-items: center;
         flex-direction: column;
     }
+
 
     .about__section {
         padding: 3rem 0 0 0;
@@ -293,6 +298,13 @@ article {
 
     .about__section__subtitle__whoami {
         margin: 0;
+    }
+
+    .about__section__subtitle__my_description {
+        text-align: justify;
+        line-height: 1.5;
+        margin-bottom: 1.5rem;
+        /* Adicione esta linha para criar espaço inferior */
     }
 }
 
