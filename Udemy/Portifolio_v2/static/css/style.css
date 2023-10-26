@@ -44,6 +44,7 @@ section {
 .articles {
     flex: 1;
     display: flex;
+    align-items: center;
 }
 
 .rodape {
@@ -127,7 +128,7 @@ article {
 
 .home__section__texto__nome {
     color: #292929;
-    font-size: 5rem;
+    font-size: 4.5rem;
     margin: 0;
 }
 
@@ -163,8 +164,19 @@ article {
     bottom: 0;
 }
 
+/* About Section */
+.about__section {
+    margin: 0 5rem;
+}
 
+.about__section__subtitle__whoami {
+    color: #2596be;
+}
 
+.about__section__subtitle__my_description {
+    text-align: justify;
+    line-height: 1.5;
+}
 
 /* Efeito de "brilho" do cursor no texto*/
 @keyframes blink {
@@ -250,7 +262,8 @@ article {
     }
 
     .home__section__image {
-        width: 35%;
+        /* width: 35%; */
+        display: none;
     }
 
     .articles {
@@ -259,8 +272,27 @@ article {
         flex-direction: column;
     }
 
+    .about__section {
+        padding: 3rem 0 0 0;
+        margin: auto;
+    }
+
+    .about__section__visual {
+        text-align: center;
+        padding: 0;
+    }
+
     .about__section__visual__image {
-        width: 60%;
+        width: 70%;
+    }
+
+    .about__section__textual {
+        padding: 0.2;
+        text-align: justify;
+    }
+
+    .about__section__subtitle__whoami {
+        margin: 0;
     }
 }
 
