@@ -170,16 +170,16 @@ article {
 /* About Section */
 .about__section {
     margin: 0 5rem;
-    background-color: white;    
+    background-color: white;
 }
 
-.about__section__visual{    
+.about__section__visual {
     text-align: center;
     margin-right: 0;
     padding-right: 0;
 }
 
-.about__section__textual{
+.about__section__textual {
     margin-left: 0;
     padding-left: 0;
 }
@@ -214,7 +214,7 @@ article {
 @media screen and (max-width: 1020px) {
 
     main {
-        margin-left: 0;        
+        margin-left: 0;
     }
 
     .navbar {
@@ -277,16 +277,16 @@ article {
         width: 2px;
         height: 20px;
     }
-    
+
     .home__section__image {
-        width: 35%;         
+        width: 35%;
     }
 
     /* About Section */
 
     .about__section {
         align-items: center;
-        margin: 1rem;        
+        margin: 1rem;
     }
 
     .articles {
@@ -297,11 +297,11 @@ article {
     da área do aparelho móvel */
     .about__section__visual {
         display: flex;
-        flex-direction: column;       
+        flex-direction: column;
         justify-content: space-around;
-        align-items: center;      
+        align-items: center;
         padding-bottom: 0;
-        margin-bottom: 0;        
+        margin-bottom: 0;
         margin-top: auto;
     }
 
@@ -313,14 +313,14 @@ article {
     .about__section__textual {
         font-size: 0.85rem;
         padding: 0;
-        
+
     }
 
     .about__section__subtitle__whoami {
         margin: 0;
     }
 
-    .about__section__subtitle__my_description {        
+    .about__section__subtitle__my_description {
         text-align: justify;
         line-height: 1.5;
         margin-bottom: 0;
