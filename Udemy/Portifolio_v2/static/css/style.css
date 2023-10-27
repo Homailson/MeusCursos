@@ -194,6 +194,9 @@ article {
 }
 
 /* Portifolio Section */
+.portfolio__section .articles {
+    flex-direction: column;
+}
 
 
 /* Efeito de "brilho" do cursor no texto*/
