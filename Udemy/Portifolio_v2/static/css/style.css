@@ -195,7 +195,29 @@ article {
 
 /* Portifolio Section */
 .portfolio__section .articles {
+    display: flex;
     flex-direction: column;
+}
+
+.portfolio__section__title {
+    font-size: 2rem;
+    text-align: center;
+    width: 100%;
+    height: fit-content;
+    flex:none;
+    padding: 2rem;
+}
+
+.portfolio__section__title h1 {
+    margin: 0;
+}
+
+.portfolio__section__projects {    
+    text-align: center;
+}
+
+.portfolio__section__projects img {
+    width: 25%;
 }
 
 
