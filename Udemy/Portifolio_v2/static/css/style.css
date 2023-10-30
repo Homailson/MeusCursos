@@ -507,7 +507,7 @@ textarea {
 
 }
 
-@media screen and (min-width: 630px) and (max-width: 1020px) {
+@media screen and (min-width: 580px) and (max-width: 1020px) {
 
     .portfolio__section__projects {
         margin-left: 10rem;
@@ -515,11 +515,11 @@ textarea {
     }
 
     .portfolio__section__projects img {
-        width: 70%;
+        width: 80%;
     }
 }
 
-@media screen and (max-width: 630px) {
+@media screen and (max-width: 580px) {
     .portfolio__section__projects img {
         width: 100%;
     }
