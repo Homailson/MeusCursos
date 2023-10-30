@@ -314,9 +314,7 @@ textarea {
 .contact__section input:focus,
 .contact__section textarea:focus {
     border-color: #25a4be;
-    /* Altere para a cor desejada quando o campo está em foco */
     outline: none;
-    /* Remove a borda de contorno padrão do navegador, se houver */
 }
 
 /* Efeito de "brilho" do cursor no texto*/
