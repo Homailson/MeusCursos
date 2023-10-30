@@ -177,7 +177,7 @@ article {
     text-align: center;
     margin-right: 0;
     padding-right: 0;
-    flex:none
+    flex: none
 }
 
 .about__section__subtitle__whoami {
@@ -191,8 +191,15 @@ article {
 
 /* Portifolio Section */
 
-.portfolio__section {    
+.portfolio__section {
     background-color: #f3f3f3;
+}
+
+.portfolio__section__projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .portfolio__section .articles {
@@ -200,23 +207,28 @@ article {
     flex-direction: column;
 }
 
-.portfolio__section__title {    
-    font-size: 2rem;    
+.portfolio__section__title {
     flex: none;
 }
 
-.portfolio__section__projects__column {    
-    display: flex;    
+.portfolio__section__title h1 {
+    margin-bottom: 0;
+    font-size: 2rem;
 }
 
-.portfolio__section__projects__column__items {    
-    position: relative;    
+.portfolio__section__projects__column {
+    width: 70%;
+    display: flex;
+}
+
+.portfolio__section__projects__column__items {
+    position: relative;
     margin: 1rem;
 }
 
 .portfolio__section__projects__column__items img {
     width: 100%;
-    height: 100%;    
+    height: 100%;
 }
 
 .portfolio__section__projects__column__texto {
@@ -230,26 +242,17 @@ article {
     color: white;
     z-index: 1;
     opacity: 0;
-    background: rgba(0, 0, 0, 0.9); /* Set the background color */
-    padding: 1rem; /* Add some padding for better visibility */
+    background: rgba(0, 0, 0, 0.9);
+    padding: 1rem;
     transition: opacity 0.3s ease;
-}
-
-.portfolio__section__projects__column__items:hover .portfolio__section__projects__column__texto {
-    opacity: 1;
-}
-
-.portfolio__section__projects__column__texto {
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    z-index: 1;
+}
+
+.portfolio__section__projects__column__items:hover .portfolio__section__projects__column__texto {
+    opacity: 1;
 }
 
 .portfolio__section__projects__column__items__texto__subtitle {
@@ -265,6 +268,56 @@ article {
     margin: 0.5rem;
 }
 
+/* Contact Section */
+
+.contact__section {
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact__section__column {
+    justify-content: left;
+}
+
+.contact__section h1 {
+    font-size: 2rem;
+}
+
+.contact__section__form {
+    display: grid;
+    gap: 0.8rem;
+}
+
+.contact__section input,
+textarea {
+    width: 100%;
+    padding: 0.5rem;
+    box-sizing: border-box;
+    border: 0.1rem solid #ccc;
+    border-radius: 0.4rem;
+}
+
+.contact__section input[type="submit"] {
+    background-color: #2596be;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1rem;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 0.5rem;
+}
+
+.contact__section input[type="submit"]:hover {
+    background-color: #25a4be;
+}
+
+.contact__section input:focus,
+.contact__section textarea:focus {
+    border-color: #25a4be;
+    /* Altere para a cor desejada quando o campo está em foco */
+    outline: none;
+    /* Remove a borda de contorno padrão do navegador, se houver */
+}
 
 /* Efeito de "brilho" do cursor no texto*/
 @keyframes blink {
@@ -320,7 +373,7 @@ article {
         color: black;
         font-size: 1rem;
         border: none;
-        cursor: pointer;        
+        cursor: pointer;
     }
 
     .show-menu {
@@ -356,7 +409,7 @@ article {
     /* About Section */
 
     .about__section {
-        align-items: center;        
+        align-items: center;
     }
 
     .articles {
@@ -372,7 +425,7 @@ article {
         align-items: center;
         padding-bottom: 0;
         margin-bottom: 0;
-        margin-top: auto;        
+        margin-top: auto;
     }
 
     .about__section__visual__image {
@@ -380,8 +433,8 @@ article {
         width: 60%;
     }
 
-    .about__section__textual {        
-        font-size: 0.85rem;        
+    .about__section__textual {
+        font-size: 0.85rem;
         padding: 0;
         margin: 0;
     }
@@ -399,43 +452,50 @@ article {
 
     /* Portifolio Section */
 
+    /* .portfolio__section__projects {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    } */
 
     .portfolio__section__projects {
-        text-align: center;        
-        padding: 0;       
+        flex-direction: row;
+        text-align: center;
+        padding: 0;
         display: flex;
-        align-items: start;        
+        align-items: start;
         margin-left: 3rem;
         margin-right: 3rem;
         /* margin-bottom: 0;
         margin-top: 0; */
     }
-    
+
     .portfolio__section__projects img {
-        width: 90%;          
+        width: 90%;
     }
 
-    .portfolio__section__projects__column{
-        justify-content:space-around;
+    .portfolio__section__projects__column {
+        justify-content: space-around;
         flex-wrap: wrap;
     }
 
     .portfolio__section__projects__column__items {
         margin: 0.2rem;
-    }   
-    
+    }
+
 
     .portfolio__section__title {
         display: flex;
         flex-direction: column;
         justify-content: end;
-        height: 10%;         
+        height: 10%;
         padding-bottom: 0;
         margin-bottom: 0;
-        margin-top: 1rem;            
+        margin-top: 1rem;
     }
 
-    .portfolio__section__title h1 {                
+    .portfolio__section__title h1 {
         font-size: 2rem;
         margin: 0;
     }
