@@ -10,10 +10,23 @@
     python -m venv venv
 ```
 
+    - No Mac pode ficar como:
+
+```
+    python3 -m venv venv
+```
+
+
 3- Ative seu ambiente virtual no mesmo diretório:
 
 ```
     .\venv\Scripts\activate
+```
+
+    - No Mac pode ficar como:
+
+```
+    source venv/bin/activate
 ```
 
 **Caso esteja com problemas de permissão para ativar o ambiente virtual no seu windows faça:**
@@ -68,12 +81,23 @@
     $env:FLASK_APP = "app.py"
 ```
 
+**No Mac (pode ser colocado direto na linha de comando do terminal ou no .zprofile)**
+
+```
+    export FLASK_APP=app.py
+```
+
 
 **Depois assim:**
 
 
 ```
     $env:FLASK_DEBUG=1
+```
+
+    - No Mac
+```
+    export FLASK_DEBUG=1
 ```
 
 8- Agora, basta apenas rodar o Flask:
