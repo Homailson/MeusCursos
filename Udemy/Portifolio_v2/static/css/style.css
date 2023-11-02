@@ -199,7 +199,9 @@ article {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: start;
+    margin-top: 0;
+    padding-top: 0;
 }
 
 .portfolio__section .articles {
