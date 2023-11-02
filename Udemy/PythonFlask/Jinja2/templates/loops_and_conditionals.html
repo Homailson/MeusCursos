@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops e Condicionais</title>
+</head>
+<body>
+    <h1>Loops em Jinja2</h1>
+    <h2>Loop For e condicionais</h2>
+
+    {% for user,os in user_os.items() %}
+        {% if os=="Windows" %}
+            <p>{{user}} é um usuário de Windows</p>
+        {% elif os=="Linux"%}
+            <p>{{user}} é um usuário de Linux</p>
+        {% elif os=="MacOS"%}
+            <p>{{user}} é um usuário de MacOS</p>
+        {% endif %}
+    {% endfor %}
+</body>
+</html>
