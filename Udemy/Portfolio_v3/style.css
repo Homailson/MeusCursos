@@ -42,14 +42,8 @@ nav ul {
     text-align: center;
 }
 
-/* End of Basic Estructure */
-
 /* Responsive Menu */
 .icon {
-    display: none;
-}
-
-.nav__hidden {
     display: none;
 }
 
@@ -57,10 +51,6 @@ nav ul {
 
     .content {
         width: 100%;
-        margin-left: .5rem;
-    }
-
-    .content section article {
         margin-left: 0;
     }
 
@@ -73,6 +63,12 @@ nav ul {
         height: auto;
     }
 
+    .nav__hidden {
+        display: none;
+    }
+
 }
 
-/* Responsive Menu */
+/* End Responsive Menu */
+
+/* End of Basic Estructure */
