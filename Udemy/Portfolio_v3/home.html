@@ -20,7 +20,7 @@
             <p>Aberto a trabalho</p>
         </div>
         <a href="javascript:void(0);" class="icon" onclick="toggleMenu()"><i class="fa fa-bars"></i></a>
-        <ul class="nav__hidden" id="nav__list">            
+        <ul class="nav__hidden" id="nav__list">
             <li><a href="#section__home" onclick="toggleMenu()">Home</a></li>
             <li><a href="#section__about" onclick="toggleMenu()">Sobre mim</a></li>
             <li><a href="#section__portfolio" onclick="toggleMenu()">Portfólio</a></li>
@@ -29,24 +29,31 @@
     </nav>
 
     <div class="content">
+        <div class="home">
+            <div class="home__img">
+                <img src="./static/img/home_picture.png" alt="Foto de Homailson">
+            </div>
+            <section class="section" id="section__home">
+                <article>
+                    <h2>Homailson Lopes</h2>
+                </article>
+                <footer class="footer">
+                    <a href="#section__about">
+                        <img class="footer__img" src="./static/img/footer_picture.gif" alt="Imagem de Rolagem">
+                    </a>
+                </footer>
+            </section>
+        </div>
 
-        <section class="section" id="section__home">
-            <article>
-                <h2>Home</h2>
-            </article>
-            <footer>
-                <p>Rodape</p>
-
-            </footer>
-        </section>
 
         <section class="section" id="section__about">
             <article>
                 <h2>Sobre mim</h2>
             </article>
-            <footer>
-                <p>Rodape</p>
-
+            <footer class="footer">
+                <a href="#section__portfolio">
+                    <img class="footer__img" src="./static/img/footer_picture.gif" alt="Imagem de Rolagem">
+                </a>
             </footer>
         </section>
 
@@ -54,9 +61,10 @@
             <article>
                 <h2>Portfólio</h2>
             </article>
-            <footer>
-                <p>Rodape</p>
-
+            <footer class="footer">
+                <a href="#section__contato">
+                    <img class="footer__img" src="./static/img/footer_picture.gif" alt="Imagem de Rolagem">
+                </a>
             </footer>
         </section>
 
