@@ -5,15 +5,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio V3</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="togglemenu.js"></script>
+    <link rel="stylesheet" href="./static/css/style.css">
+    <script src="./static/js/togglemenu.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
     <nav>
+        <div class="navbar__image">
+            <img src="./static/img/profile_picture.png" alt="Foto de Homailson">
+        </div>
+        <div class="navbar__info">
+            <h1>Homailson</h1>
+            <p>Aberto a trabalho</p>
+        </div>
         <a href="javascript:void(0);" class="icon" onclick="toggleMenu()"><i class="fa fa-bars"></i></a>
-        <ul class="nav__hidden" id="nav__list">
+        <ul class="nav__hidden" id="nav__list">            
             <li><a href="#section__home" onclick="toggleMenu()">Home</a></li>
             <li><a href="#section__about" onclick="toggleMenu()">Sobre mim</a></li>
             <li><a href="#section__portfolio" onclick="toggleMenu()">Portfólio</a></li>
