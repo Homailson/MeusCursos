@@ -54,6 +54,7 @@ nav ul li a:hover {
 }
 
 .content section article {
+    font-size: 2rem;
     margin-left: 10%;
     margin-top: 5%;
     height: 90%;
@@ -82,6 +83,7 @@ nav ul li a:hover {
     }
 
     .content section article {
+        font-size: 1.5rem;
         margin-left: 0;
         text-align: center;
     }
@@ -163,3 +165,43 @@ nav ul li a:hover {
     bottom: 0;
     z-index: 0;
 }
+
+.home__section__texto__frase__efeito {
+    color: #2596be;
+    margin: 0;
+}
+
+.home__section__texto__frase__efeito__palavras {
+    display: inline-block;
+}
+
+.home__section__texto__frase__efeito__fixo {
+    color: #D93654;
+    font-weight: 200;
+}
+
+.home__section__texto__frase__efeito__cursor {
+    display: inline-block;
+    width: .12rem;
+    height: 1.8rem;
+    background-color: black;
+    margin-left: .2rem;
+    animation: blink 0.8s infinite;
+}
+
+/* Efeito de "brilho" do cursor no texto*/
+@keyframes blink {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+}
+
+/* Fim do efeito de "brilho" do cursor no texto*/
+
+/* End of Home Section */
