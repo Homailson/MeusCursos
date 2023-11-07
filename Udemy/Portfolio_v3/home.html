@@ -7,20 +7,21 @@
     <title>Portfolio V3</title>
     <link rel="stylesheet" href="style.css">
     <script src="togglemenu.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
-<body>    
-    <nav>   
-        <div class="menu-icon">&#9776;</div>     
-        <ul class="nav__list">            
-            <li><a href="#section__home">Home</a></li>
-            <li><a href="#section__about">Sobre mim</a></li>
-            <li><a href="#section__portfolio">Portfólio</a></li>
-            <li><a href="#section__contato">Contato</a></li>
+<body>
+    <nav>
+        <a href="javascript:void(0);" class="icon" onclick="toggleMenu()"><i class="fa fa-bars"></i></a>
+        <ul id="nav__list">
+            <li><a href="#section__home" onclick="toggleMenu()">Home</a></li>
+            <li><a href="#section__about" onclick="toggleMenu()">Sobre mim</a></li>
+            <li><a href="#section__portfolio" onclick="toggleMenu()">Portfólio</a></li>
+            <li><a href="#section__contato" onclick="toggleMenu()">Contato</a></li>
         </ul>
     </nav>
 
-    <div class="content">       
+    <div class="content">
 
         <section class="section" id="section__home">
             <article>
@@ -63,7 +64,7 @@
 
     </div>
 
-    
+
 
 </body>
 

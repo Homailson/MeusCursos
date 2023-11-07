@@ -22,7 +22,7 @@ nav ul {
 
 .content {
     width: 80%;
-    margin-left: 20%;    
+    margin-left: 20%;
 }
 
 .content section {
@@ -45,43 +45,33 @@ nav ul {
 /* End of Basic Estructure */
 
 /* Responsive Menu */
-
-.menu-icon {
-    color: white;
-    font-size: 1.5rem;
-    cursor: pointer;
-    padding: 0.2rem;
+.icon {
     display: none;
 }
 
-@media screen and (max-width: 768px) {
-    
-    .menu-icon {
-        display: block; /* Exibe o ícone do menu quando a tela é pequena */
+.nav__hidden {
+    display: none;
+}
+
+@media screen and (max-width: 767px) {
+
+    .content {
+        width: 100%;
+        margin-left: 0;
     }
 
-    .nav__list {
-        display: none;
+    .content section article {
+        margin-left: 0;
     }
 
-    .nav__list.active {
-        display: flex;
+    .icon {
+        display: block;
     }
 
     nav {
         width: 100%;
         height: auto;
-        flex-direction: column;
     }
-
-    .content {        
-        margin: 0;
-        width: 100%; 
-    }
-
-    .content section article {
-        margin-top: 10%;        
-    }
-    
 }
+
 /* Responsive Menu */
