@@ -7,7 +7,7 @@ function toggleMenu() {
     }
 }
 
-// If the screen i reduced to a size smaller than 768px add the class
+// If the screen is reduced to a size smaller than 768px add the class
 // nav__hidden to navList element, otherwise remove it
 window.addEventListener('resize', function () {
     var navList = document.getElementById("nav__list");

@@ -53,11 +53,11 @@ nav ul {
     display: none;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
 
     .content {
         width: 100%;
-        margin-left: 0;
+        margin-left: .5rem;
     }
 
     .content section article {
@@ -72,6 +72,7 @@ nav ul {
         width: 100%;
         height: auto;
     }
+
 }
 
 /* Responsive Menu */
