@@ -8,7 +8,7 @@ function typingEffect() {
         if (word.length > 0) {
             document.getElementById('word').innerHTML += word.shift();
         } else {
-            setTimeout(deletingEffect, 1500); // Agora espera um segundo antes de começar a apagar
+            setTimeout(deletingEffect, 1500);
             return false;
         }
         timer = setTimeout(loopTyping, 40);
@@ -23,7 +23,7 @@ function deletingEffect() {
             word.pop();
             document.getElementById('word').innerHTML = word.join("");
         } else {
-            setTimeout(typingEffect, 100); // Agora espera meio segundo antes de começar a escrever a próxima palavra
+            setTimeout(typingEffect, 100);
             if (words.length > (i + 1)) {
                 i++;
             } else {

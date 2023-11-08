@@ -20,10 +20,10 @@
         </div>
         <a href="javascript:void(0);" class="icon" onclick="toggleMenu()"><i class="fa fa-bars"></i></a>
         <ul class="nav__hidden" id="nav__list">
-            <li><a href="#section__home" onclick="toggleMenu()">Home</a></li>
-            <li><a href="#section__about" onclick="toggleMenu()">Sobre mim</a></li>
-            <li><a href="#section__portfolio" onclick="toggleMenu()">Portfólio</a></li>
-            <li><a href="#section__contato" onclick="toggleMenu()">Contato</a></li>
+            <li><a class="navbar__item" href="#section__home" onclick="toggleMenu()">Home</a></li>
+            <li><a class="navbar__item" href="#section__about" onclick="toggleMenu()">Sobre mim</a></li>
+            <li><a class="navbar__item" href="#section__portfolio" onclick="toggleMenu()">Portfólio</a></li>
+            <li><a class="navbar__item" href="#section__contato" onclick="toggleMenu()">Contato</a></li>
         </ul>
     </nav>
 
@@ -35,10 +35,10 @@
             <section class="section" id="section__home">
                 <article>
                     <h2>Homailson Lopes</h2>
-                    <p class="home__section__texto__frase__efeito">
-                        <span class="home__section__texto__frase__efeito__fixo">Sou </span>
-                        <span class="home__section__texto__frase__efeito__palavras" id="word"></span>
-                        <span class="home__section__texto__frase__efeito__cursor" id="cursor"></span>
+                    <p class="home__text">
+                        <span class="home__text__fix">Sou </span>
+                        <span class="home__text__words" id="word"></span>
+                        <span class="home__text__cursor" id="cursor"></span>
                     </p>
                 </article>
                 <footer class="footer">
@@ -49,42 +49,63 @@
             </section>
         </div>
 
+        <div class="about">
+            <section class="section" id="section__about">
+                <article>
+                    <div class="about__img">
+                        <h2>Sobre mim</h2>
+                        <img src="./static/img/about_picture.jpg" alt="Foto de Homailson">
+                    </div>
 
-        <section class="section" id="section__about">
-            <article>
-                <h2>Sobre mim</h2>
-            </article>
-            <footer class="footer">
-                <a href="#section__portfolio">
-                    <img class="footer__img" src="./static/img/footer_picture.gif" alt="Imagem de Rolagem">
-                </a>
-            </footer>
-        </section>
+                    <div class="about__txt">
+                        <h1>Quem sou eu?</h1>
+                        <p>Resido em Lorena, estado de São Paulo. Atuo, em
+                            regime parcial, como professor de Matemática nos anos finais do ensino básico.
+                            Sou aluno do 6º período do curso de Ciências de Dados, pela UNINTER.
+                            Em setembro de 2023, concluí, com sucesso, estágio pela UOL Compass,
+                            onde conquistei a certificação AWS Cloud Practitioner. Tenho me aprofundando
+                            na área de dados e estou iniciando projetos para desenvolvimento pessoal e
+                            profissional.
+                        </p>
+                    </div>
+                </article>
+                <footer class="footer">
+                    <a href="#section__portfolio">
+                        <img class="footer__img" src="./static/img/footer_picture.gif" alt="Imagem de Rolagem">
+                    </a>
+                </footer>
+            </section>
+        </div>
 
-        <section class="section" id="section__portfolio">
-            <article>
-                <h2>Portfólio</h2>
-            </article>
-            <footer class="footer">
-                <a href="#section__contato">
-                    <img class="footer__img" src="./static/img/footer_picture.gif" alt="Imagem de Rolagem">
-                </a>
-            </footer>
-        </section>
+        <div class="portifolio">
+            <section class="section" id="section__portfolio">
+                <article>
+                    <h2>Portfólio</h2>
+                </article>
+                <footer class="footer">
+                    <a href="#section__contato">
+                        <img class="footer__img" src="./static/img/footer_picture.gif" alt="Imagem de Rolagem">
+                    </a>
+                </footer>
+            </section>
+        </div>
 
-        <section class="section" id="section__contato">
-            <article>
-                <h2>Contato</h2>
-            </article>
-            <footer>
-                <p>Rodape</p>
-            </footer>
-        </section>
+        <div class="contact">
+            <section class="section" id="section__contato">
+                <article>
+                    <h2>Contato</h2>
+                </article>
+                <footer>
+                    <p>Rodape</p>
+                </footer>
+            </section>
+        </div>
 
     </div>
 
     <script type="text/javascript" src="./static/js/togglemenu.js"></script>
     <script type="text/javascript" src="./static/js/home_text.js"></script>
+    <script type="text/javascript" src="./static/js/highlight.js"></script>
 
 </body>
 

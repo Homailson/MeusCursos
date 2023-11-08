@@ -58,6 +58,7 @@ nav ul li a:hover {
     margin-left: 10%;
     margin-top: 5%;
     height: 90%;
+    z-index: 1;
 }
 
 .content section footer {
@@ -68,6 +69,125 @@ nav ul li a:hover {
 .content section footer img {
     width: 2%;
     height: auto;
+}
+
+/* End of Basic Estructure */
+
+/* Navbar */
+
+.navbar__image {
+    width: 50%;
+    height: auto;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 1rem;
+}
+
+.navbar__image img {
+    width: 100%;
+    height: auto;
+    background-color: #EAEAEA;
+}
+
+.navbar__info {
+    font-size: 1rem;
+}
+
+.navbar__info p {
+    color: #2596be;
+}
+
+/* Classe adicionada pelo JS highlight.js*/
+.navbar__item.highlighted {
+    color: #2596be;
+}
+
+/* Fim da Classe adicionada pelo JS highlight.js */
+
+/* End of Navbar */
+
+/* Home Section */
+
+.home {
+    background-color: #f3f3f3;
+    position: relative;
+}
+
+.home__img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.home__text {
+    color: #2596be;
+    margin: 0;
+}
+
+.home__text__words {
+    display: inline-block;
+}
+
+.home__text__fix {
+    color: #D93654;
+    font-weight: 200;
+}
+
+.home__text__cursor {
+    display: inline-block;
+    width: .12rem;
+    height: 1.8rem;
+    background-color: #D93654;
+    margin-left: .2rem;
+    animation: blink 0.8s infinite;
+}
+
+/* Efeito de "brilho" do cursor no texto*/
+@keyframes blink {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+}
+
+/* Fim do efeito de "brilho" do cursor no texto*/
+
+/* End of Home Section */
+
+/* About Section */
+
+.about section article {
+    display: flex;
+}
+
+.about section article .about__img {
+    width: 30%;
+}
+
+.about section article .about__txt {
+    margin: auto;
+    font-size: 1rem;
+    padding: 1rem;
+    flex: 1;
+}
+
+
+.about section article .about__img img {
+    width: 100%;
+    height: auto;
+}
+
+.about section article .about__txt h1 {
+    text-align: left;
+}
+
+.about section article .about__txt p {
+    text-align: justify;
 }
 
 /* Responsive Menu */
@@ -95,7 +215,7 @@ nav ul li a:hover {
     nav {
         width: 100%;
         height: auto;
-        z-index: 1;
+        z-index: 2;
     }
 
     .nav__hidden {
@@ -118,90 +238,29 @@ nav ul li a:hover {
         width: 6%;
         height: auto;
     }
+
+    /* .about section article {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about section article .about__img {
+        width: 50%;
+    }
+
+    .about section article .about__img h2 {
+        white-space: nowrap;
+    }
+
+    .about section article .about__txt {
+        padding-top: 0;
+    }
+
+    .about section article .about__txt p {
+        font-size: 0.95rem;
+    } */
+
+
 }
 
 /* End Responsive Menu */
-
-/* End of Basic Estructure */
-
-/* Sections */
-
-/* Navbar */
-
-.navbar__image {
-    width: 50%;
-    height: auto;
-    border-radius: 50%;
-    overflow: hidden;
-    margin: 1rem;
-}
-
-.navbar__image img {
-    width: 100%;
-    height: auto;
-    background-color: #EAEAEA;
-}
-
-.navbar__info {
-    font-size: 1rem;
-}
-
-.navbar__info p {
-    color: #2596be;
-}
-
-/* End of Navbar */
-
-/* Home Section */
-
-.home {
-    background-color: #f3f3f3;
-    position: relative;
-}
-
-.home__img {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    z-index: 0;
-}
-
-.home__section__texto__frase__efeito {
-    color: #2596be;
-    margin: 0;
-}
-
-.home__section__texto__frase__efeito__palavras {
-    display: inline-block;
-}
-
-.home__section__texto__frase__efeito__fixo {
-    color: #D93654;
-    font-weight: 200;
-}
-
-.home__section__texto__frase__efeito__cursor {
-    display: inline-block;
-    width: .12rem;
-    height: 1.8rem;
-    background-color: black;
-    margin-left: .2rem;
-    animation: blink 0.8s infinite;
-}
-
-/* Efeito de "brilho" do cursor no texto*/
-@keyframes blink {
-
-    0%,
-    100% {
-        opacity: 1;
-    }
-
-    50% {
-        opacity: 0;
-    }
-}
-
-/* Fim do efeito de "brilho" do cursor no texto*/
-
-/* End of Home Section */
