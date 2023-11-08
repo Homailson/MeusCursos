@@ -167,12 +167,13 @@ nav ul li a:hover {
 
 .about section article .about__img {
     width: 30%;
+    margin: auto;
 }
 
 .about section article .about__txt {
     margin: auto;
     font-size: 1rem;
-    padding: 1rem;
+    padding: 2rem;
     flex: 1;
 }
 
@@ -231,36 +232,21 @@ nav ul li a:hover {
     }
 
     .content section footer {
-        z-index: 1;
+        display: none;
     }
 
-    .content section footer img {
-        width: 6%;
-        height: auto;
-    }
-
-    /* .about section article {
-        flex-direction: column;
-        align-items: center;
+    .about section article {
+        display: block;   
     }
 
     .about section article .about__img {
         width: 50%;
-    }
-
-    .about section article .about__img h2 {
-        white-space: nowrap;
+        margin: auto;        
     }
 
     .about section article .about__txt {
         padding-top: 0;
+        font-size: 0.95rem;
     }
 
-    .about section article .about__txt p {
-        font-size: 0.95rem;
-    } */
-
-
 }
-
-/* End Responsive Menu */
