@@ -30,16 +30,16 @@ nav ul {
 }
 
 nav ul li a {
-    border-bottom: 1.5px solid transparent;
+    border-bottom: 0.1rem solid transparent;
     display: inline-flex;
     text-decoration: none;
-    font-size: 1rem;
+    font-size: 1.2rem;
     color: black;
     margin-bottom: 1rem;
 }
 
 nav ul li a:hover {
-    border-bottom: 1.5px solid #D93654;
+    border-bottom: 0.1rem solid #D93654;
 }
 
 .content {
@@ -98,11 +98,14 @@ nav ul li a:hover {
 }
 
 .navbar__info {
-    font-size: 1rem;
+    font-size: 1.2rem;
+    text-align: center;
 }
 
 .navbar__info p {
     color: #2596be;
+    font-size: 1rem;
+    white-space: nowrap;    
 }
 
 /* Classe adicionada pelo JS highlight.js*/
@@ -192,10 +195,6 @@ nav ul li a:hover {
     height: auto;
 }
 
-.about section article .about__txt h1 {
-    text-align: left;
-}
-
 .about section article .about__txt p {
     text-align: justify;
 }
@@ -239,13 +238,15 @@ nav ul li a:hover {
     z-index: 1;
     opacity: 0;
     background: rgba(0, 0, 0, 0.9);
-    padding: ;
     transition: opacity 0.3s ease;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    text-align: center;
+    justify-content: center;    
     font-size: 1rem;
+}
+
+.portfolio {
+    background-color: #f3f3f3;
 }
 
 .portfolio .images figure:hover .images__text {
@@ -258,7 +259,7 @@ nav ul li a:hover {
 }
 
 .portfolio .images__text a:hover {
-    text-decoration: underline;
+    color: #2596be;    
 }
 
 .portfolio .images__text p {
@@ -283,10 +284,6 @@ nav ul li a:hover {
         margin-left: 0;
     }
 
-    .content section article {
-        text-align: center;
-    }
-
     .icon {
         display: block;
     }
@@ -297,10 +294,12 @@ nav ul li a:hover {
         z-index: 2;
     }
 
+    /* Esta classe é importante para a função toggle */
     .nav__hidden {
         display: none;
     }
-
+    /* Fim da classe importante */
+    
     .navbar__image {
         display: none;
     }
@@ -309,40 +308,26 @@ nav ul li a:hover {
         display: none;
     }
 
-    .content section footer {
+    .content section footer {        
         display: none;
     }
 
     .about section article {
-        display: block;
+        display: block;          
     }
 
     .about section article .about__img {
-        width: 50%;
-        margin: auto;
+        width: 50%;        
     }
 
     .about section article .about__txt {
-        padding: 0;
-        font-size: 0.95rem;
+        padding: 0;        
+        font-size: 0.90rem;
     }
-
 
     .portfolio .images {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(3, 1fr);
     }
-
-    .portfolio .images figure {
-        width: 85%;
-        margin: auto;
-        padding: 0.2rem;
-    }
-
-    .portfolio .images figure img {
-        width: 100%;
-        display: block;
-    }
-
 }
