@@ -70,7 +70,7 @@
                             onde conquistei a certificação AWS Cloud Practitioner. Tenho me aprofundando
                             na área de dados e estou iniciando projetos para desenvolvimento pessoal e
                             profissional.
-                            <a
+                            <a class="curriculo"
                                 href="https://drive.google.com/file/d/1m63R3iDqKu20-hIf7nJ7DU-jOEw3uqUH/view?usp=sharing">
                                 Acesse meu currículo aqui
                             </a>
@@ -150,11 +150,25 @@
                     <h2>Contato</h2>
                 </div>
 
-                <article>
-
+                <article class="contact__form">
+                    <form action="#" method="post">
+                        <input type="text" id="nome" name="nome" placeholder="Nome" required>
+                        <input type="email" id="email" name="email" placeholder="Email" required>
+                        <input type="text" id="assunto" name="assunto" placeholder="Assunto" required>
+                        <textarea id="mensagem" name="mensagem" placeholder="Mensagem" rows="4" required></textarea>
+                        <input type="submit" value="Enviar">
+                    </form>
                 </article>
-                <footer>
-                    <p>Rodape</p>
+                <footer class="social__networks">
+                    <a href="https://www.linkedin.com/in/homailsonlopes/" target="_blank" class="social__link">
+                        <img src="./static/img/linkedin.png" alt="LinkedIn">
+                    </a>
+                    <a href="https://github.com/Homailson/" target="_blank" class="social__link">
+                        <img src="./static/img/github.png" alt="GitHub">
+                    </a>
+                    <a href="https://www.facebook.com/homailson.lopespassos" target="_blank" class="social__link">
+                        <img src="./static/img/facebook.png" alt="Facebook">
+                    </a>
                 </footer>
             </section>
         </div>

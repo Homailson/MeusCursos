@@ -298,7 +298,7 @@ article {
     margin-top: 0;
 }
 
-.contact__form {
+.contact__form form {
     background-color: #fff;
     border: 1px solid #ccc;
     border-radius: 0.5rem;
