@@ -265,6 +265,8 @@ nav ul li a:hover {
 .portfolio .images__text a {
     text-decoration: none;
     color: #D93654;
+    width: fit-content;
+    align-self: center;
 }
 
 .portfolio .images__text a:hover {
