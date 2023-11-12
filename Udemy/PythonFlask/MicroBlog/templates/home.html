@@ -31,15 +31,17 @@
         </section>
         <section>
             <h1>Posts recentes</h1>
+            {% for entry in entries %}
             <article class="entry">
                 <div>
-                    <h2 class="entry__title">Um pouco do dia a dia</h2>
-                    <time class="entry__date" datetime="17-10-2023">• Oct 17</time>
+                    <h2 class="entry__title">{{ entry[0] | truncate(30, true) }}</h2>
+                    <time class="entry__date" datetime="{{ entry[1] }}">• {{ entry[2] }}</time>
                 </div>
                 <p class="entry__content">
-                    Hoje eu não programei muito, mas tudo bem! Pode ser um dia fantástico mesmo assim!
+                    {{ entry[0] }}
                 </p>
             </article>
+            {% endfor %}
         </section>
     </main>
     <footer class="footer">
